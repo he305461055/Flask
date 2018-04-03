@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>TEST</h1>
+      <div>
+      <ul class="entries">
+      {% for entry in entries %}
+        <li>商圈：{{ entry.CBD }}  网址：{{ entry.url }}</li>
+      {% endfor %}
+      </ul>
+      </div>
+</body>
+</html>
